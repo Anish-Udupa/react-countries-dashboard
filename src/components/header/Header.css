@@ -1,0 +1,9 @@
+#header-container {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2%;
+    border-bottom: 1px solid gray;
+}
