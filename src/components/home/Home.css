@@ -8,3 +8,10 @@
     align-items: center;
     justify-content: space-between;
 }
+
+#country-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
