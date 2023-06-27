@@ -1,7 +1,11 @@
-function SearchBar(){
+function SearchBar({setSearchValue}){
 
     const inputChangeHandler = (e) => {
-        console.log(`${e.target.value}`)
+        const search_value = e.target.value.trim()
+        if(search_value === "")
+            setSearchValue(null)
+        else
+            setSearchValue(search_value)
     }
 
     return(
