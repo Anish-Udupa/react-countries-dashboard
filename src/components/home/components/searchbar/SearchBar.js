@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./SearchBar.css";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 function SearchBar({setSearchValue}){
 
     const inputChangeHandler = (e) => {
@@ -9,14 +13,15 @@ function SearchBar({setSearchValue}){
     }
 
     return(
-        <div>
+        <>
+            <FontAwesomeIcon className="search-bar-search" icon={faSearch} color="gray" />
             <input 
-                id="searchbar" 
+                id="search-bar" 
                 type="text" 
                 placeholder="Search for a country..." 
                 onChange={inputChangeHandler}
             />
-        </div>
+        </>
     );
 }
 

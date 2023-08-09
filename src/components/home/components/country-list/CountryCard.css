@@ -3,13 +3,21 @@
 }
 
 .country-list-container {
-    width: 20%;
+    width: 21%;
     /* height: 40vh; */
     margin: 5vh 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 1px var(--dark-gray);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    min-width: 200px;
+}
+
+.country-list-container:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px var(--dark-gray);
 }
 
 .country-flag {
@@ -19,11 +27,28 @@
 
 .country-description {
     margin: 0% 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.country-name {
+    font-weight: 600;
+    font-size: 16px;
+    /* padding: 10px 0%; */
+    padding-bottom: 20px;
+}
+
 
 .country-detail-container {
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 2px 0px;
     margin: 0;
+}
+
+.country-detail-key {
+    font-weight: 600;
+    padding-right: 5px;
 }

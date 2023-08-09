@@ -1,9 +1,11 @@
+import "./Filter.css";
+
 function Filter({setFilterValue}){
     const filterHandler = (e) => {
         setFilterValue(e.target.value);
     }
     return (
-        <select onChange={filterHandler}>
+        <select id="filter" onChange={filterHandler}>
             <option hidden disabled selected>Filter by Region</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
