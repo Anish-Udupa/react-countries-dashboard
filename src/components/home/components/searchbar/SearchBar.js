@@ -13,7 +13,7 @@ function SearchBar({setSearchValue}){
     }
 
     return(
-        <>
+        <div id="search-bar-container">
             <FontAwesomeIcon className="search-bar-search" icon={faSearch} color="gray" />
             <input 
                 id="search-bar" 
@@ -21,7 +21,7 @@ function SearchBar({setSearchValue}){
                 placeholder="Search for a country..." 
                 onChange={inputChangeHandler}
             />
-        </>
+        </div>
     );
 }
 

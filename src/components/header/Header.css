@@ -20,6 +20,31 @@
     cursor: pointer;
 }
 
+#header-dark-mood-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#header-dark-mood-container:hover {
+    cursor: pointer;
+}
+
 #dark-mode-text {
     font-size: 18px;
+}
+
+@media only screen and (max-width: 500px) {
+    #header-container {
+        margin-bottom: 10px;
+    }
+    #header-title {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    #dark-mode-text {
+        font-size: 14px;
+    }
 }

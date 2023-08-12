@@ -2,22 +2,17 @@
     margin: 0;
 }
 
-#back-button-container {
-    position: relative;
-}
-
 #back-button {
     margin-bottom: 5vh;
     width: 10%;
     padding: 10px 0px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px var(--dark-gray);
-    text-align: center;
-}
-
-.back-button-icon {
-    position: absolute;
-    margin: 10px 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #back-button:hover {
@@ -85,6 +80,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .country-full-borders-values {
@@ -98,4 +94,43 @@
 .country-full-borders-values:hover {
     cursor: pointer;
     box-shadow: 0px 0px 1px 1px var(--dark-gray);
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    #back-button {
+        margin: 10px 0px;
+        width: 100px;
+        padding: 10px 0px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px var(--dark-gray);
+        text-align: center;
+    }
+
+    #country-full-details-container {
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+
+    #country-full-flag-container {
+        width: 100%;
+    }
+
+    #country-full-details {
+        width: 100%;
+    }
+
+    .country-full-heading {
+        font-size: 1.5em;
+    }
+
+    .country-full-details-row {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+
+
 }

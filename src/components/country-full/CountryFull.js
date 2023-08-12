@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router"; 
 import "./CountryFull.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 
 function CountryFull() {
     const { state } = useLocation();
@@ -51,10 +51,10 @@ function CountryFull() {
         fetchData();
     }, [state])
     return (
-        <div id="country-full-container">
-            <div id="back-button-container">
-                <FontAwesomeIcon className="back-button-icon" icon={faArrowLeft} size="lg" color="dark-gray" />
-                <div id="back-button" onClick={onBackBtnClick}>Back</div>
+        <div id="country-full-container" onClick={onBackBtnClick}>
+            <div id="back-button">
+                <FontAwesomeIcon icon={faArrowLeftLong} size="lg" color="dark-gray" />
+                <p>Back</p>
             </div>
             {country_data && (<div id="country-full-details-container">
                 <div id="country-full-flag-container">
