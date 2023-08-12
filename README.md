@@ -31,10 +31,10 @@ Users should be able to:
 ### Screenshot
 
 Light Mode:
-![](./light-mode-screenshot.png)
+[](./light-mode-screenshot.png)
 
 Dark Mode:
-![](./dark-mode-screenshot.png)
+[](./dark-mode-screenshot.png)
 
 ### Links
 
