@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-countries-dashboard/static/css/main.0f4f5e8d.css",
+    "main.js": "/react-countries-dashboard/static/js/main.36aa998f.js",
+    "index.html": "/react-countries-dashboard/index.html",
+    "main.0f4f5e8d.css.map": "/react-countries-dashboard/static/css/main.0f4f5e8d.css.map",
+    "main.36aa998f.js.map": "/react-countries-dashboard/static/js/main.36aa998f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f4f5e8d.css",
+    "static/js/main.36aa998f.js"
+  ]
+}
