@@ -7,17 +7,18 @@
     width: 10%;
     padding: 10px 0px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px var(--dark-gray);
+    box-shadow: 0px 0px 5px var(--box-shadow-color);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    background-color: var(--component-background-color);
 }
 
 #back-button:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 5px 2px var(--dark-gray);
+    box-shadow: 0px 0px 5px 2px var(--box-shadow-color);
 }
 
 #country-full-container {
@@ -85,7 +86,8 @@
 
 .country-full-borders-values {
     border-radius: 2px;
-    box-shadow: 0px 0px 1px var(--dark-gray);
+    background-color: var(--component-background-color);
+    box-shadow: 0px 0px 1px var(--box-shadow-color);
     text-align: center;
     padding: 5px 20px;
     gap: 10px;
@@ -93,7 +95,7 @@
 
 .country-full-borders-values:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 1px 1px var(--dark-gray);
+    box-shadow: 0px 0px 1px 1px var(--box-shadow-color);
 }
 
 
@@ -103,9 +105,6 @@
         margin: 10px 0px;
         width: 100px;
         padding: 10px 0px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px var(--dark-gray);
-        text-align: center;
     }
 
     #country-full-details-container {

@@ -19,4 +19,15 @@ code {
   --dark-gray: hsl(0, 0%, 52%);
   --light-gray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+
+  --body-background-color: var(--light-gray);
+  --component-background-color: var(--white);
+  --text-color: var(--very-dark-blue-text);
+  --box-shadow-color: var(--dark-gray);
+}
+
+body.dark {
+  --body-background-color: var(--very-dark-blue-bg);
+  --component-background-color: var(--dark-blue);
+  --text-color: var(--white)
 }
