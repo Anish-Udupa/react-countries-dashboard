@@ -12,10 +12,19 @@
 }
 
 #country-card-container {
+    margin: 5vh 0vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    column-gap: calc(16% / 3);
+    row-gap: 10vh;
+}
+
+@media only screen and (max-width: 1075px) {
+    #country-card-container {
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width: 500px) {

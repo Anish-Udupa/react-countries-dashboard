@@ -24,6 +24,7 @@ code {
   --component-background-color: var(--white);
   --text-color: var(--very-dark-blue-text);
   --box-shadow-color: var(--dark-gray);
+
 }
 
 body.dark {

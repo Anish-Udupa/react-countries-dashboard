@@ -6,7 +6,7 @@ function Filter({setFilterValue}){
     }
     return (
         <select id="filter" onChange={filterHandler}>
-            <option hidden disabled selected>Filter by Region</option>
+            <option style={{display: "none"}}>Filter by Region</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
             <option value="Asia">Asia</option>
