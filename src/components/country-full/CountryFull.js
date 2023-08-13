@@ -32,6 +32,7 @@ function CountryFull() {
     }
 
     const onBorderCountryClick = (name) => {
+        // console.log(name)
         navigate("/country", { state: {country_name: name}})
     }
 
@@ -51,8 +52,8 @@ function CountryFull() {
         fetchData();
     }, [state])
     return (
-        <div id="country-full-container" onClick={onBackBtnClick}>
-            <div id="back-button">
+        <div id="country-full-container">
+            <div id="back-button"  onClick={onBackBtnClick}>
                 <FontAwesomeIcon icon={faArrowLeftLong} size="lg" color="dark-gray" />
                 <p>Back</p>
             </div>
