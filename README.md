@@ -59,4 +59,4 @@ Dark Mode:
 ## Author
 
 - Github - [Anish Udupa H](https://github.com/Anish-Udupa)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Anish-Udupa)
+- Frontend Mentor - [Anish Udupa](https://www.frontendmentor.io/profile/Anish-Udupa)
