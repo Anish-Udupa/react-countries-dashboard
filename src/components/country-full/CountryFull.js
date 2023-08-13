@@ -31,10 +31,10 @@ function CountryFull() {
         navigate("/");
     }
 
-    const onBorderCountryClick = (name) => {
-        // console.log(name)
-        navigate("/country", { state: {country_name: name}})
-    }
+    // const onBorderCountryClick = (name) => {
+    //     // console.log(name)
+    //     navigate("/country", { state: {country_name: name}})
+    // }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -113,7 +113,8 @@ function CountryFull() {
                     <div className="country-full-detail-container">
                         <p className="country-full-detail-key">Border Countries:</p>
                         <div className="country-full-borders-container">
-                        {country_data.borders.map(item => <p className="country-full-borders-values" key={item} onClick={() => onBorderCountryClick(item)}>{item}</p>)}
+                        {/* {country_data.borders.map(item => <p className="country-full-borders-values" key={item} onClick={() => onBorderCountryClick(item)}>{item}</p>)} */}
+                        {country_data.borders.map(item => <p className="country-full-borders-values" key={item}>{item}</p>)}
                         </div>
                     </div>
                 </div>
