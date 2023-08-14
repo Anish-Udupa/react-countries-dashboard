@@ -42,8 +42,17 @@ function CountryFull() {
             try {
                 const api_search_name_endpoint = `https://restcountries.com/v3.1/name/${country_name}?fields=name,nativeName,population,region,subregion,capital,tld,currencies,languages,borders,flags`
                 const data = ( await axios.get(api_search_name_endpoint)).data;
-                console.log(data);
-                setCountryData(data[0]);
+                // console.log(data);
+                if(data.length === 1) 
+                    setCountryData(data[0]);
+                else if(data.length > 1) {
+                    const req_data = data.filter(item => item.name.common === country_name);
+                    // console.log(req_data);
+                    if(req_data == null)
+                        setCountryData(data[0]);
+                    else
+                        setCountryData(req_data[0]);
+                }
             }
             catch(err) {
                 console.log("Failed to fetch");
