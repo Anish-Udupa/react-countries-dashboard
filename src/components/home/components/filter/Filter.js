@@ -3,6 +3,7 @@ import "./Filter.css";
 function Filter({setFilterValue}){
     const filterHandler = (e) => {
         setFilterValue(e.target.value);
+        console.log("in filter");
     }
     return (
         <select id="filter" onChange={filterHandler}>
