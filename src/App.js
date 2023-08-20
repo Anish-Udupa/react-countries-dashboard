@@ -11,7 +11,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/country" element={<CountryFull />} />
-          <Route path="/abc" element={<Error1 />} />
         </Routes>
     </div>
   );
